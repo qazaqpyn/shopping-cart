@@ -9,7 +9,7 @@ function Item(props) {
             <h3>{props.item.name} | ${props.item.price}</h3> 
             <div className="description-hover">
                 <p>{props.item.description}</p>
-                <button onClick={()=>props.addItem(index)}  >Add</button>
+                <button onClick={()=>props.addItem(index)}  className="cartAdd">Add</button>
             </div> 
         </div>
     )

@@ -173,3 +173,8 @@ button:visited {
 button:focus{
     outline: 0;
 }
+
+.cartAdd{
+    
+    width: 250px;
+}
