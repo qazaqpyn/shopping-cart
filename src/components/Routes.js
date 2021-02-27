@@ -30,28 +30,28 @@ function Routes() {
         <div>
            <BrowserRouter>
                 <header>
-                    <a href='/'>LOGO</a>
+                    <a href='/shopping-cart/'>LOGO</a>
                     <nav>
                         <div>
                             <ul>
-                                <li><NavLink to='/about'>About</NavLink></li>
-                                <li><NavLink to='/shop'>Shop</NavLink></li>
-                                <li><NavLink to='/cart'>Cart({cardItems.length})</NavLink></li>
+                                <li><NavLink to='/shopping-cart/about'>About</NavLink></li>
+                                <li><NavLink to='/shopping-cart/shop'>Shop</NavLink></li>
+                                <li><NavLink to='/shopping-cart/cart'>Cart({cardItems.length})</NavLink></li>
                             </ul>
                         </div>
                     </nav>
                 </header>
                 <Switch>
-                    <Route exact path='/about' component={About} />
-                    <Route exact path='/shop' 
+                    <Route exact path='/shopping-cart/about' component={About} />
+                    <Route exact path='/shopping-cart/shop' 
                         render={()=>(
                             <Shop addItem={addItem} />
                         )} />
-                    <Route exact path='/cart' 
+                    <Route exact path='/shopping-cart/cart' 
                     render={()=>(
                         <Checkout cardItems={cardItems} clearCart={clearCart} removeItem={removeItem}/>
                     )} />
-                    <Route exact path="/" component={Welcome} />
+                    <Route exact path="/shopping-cart/" component={Welcome} />
                 </Switch>
            </BrowserRouter> 
         </div>
