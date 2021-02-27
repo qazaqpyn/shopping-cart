@@ -29,16 +29,18 @@ function Routes() {
     return (
         <div>
            <BrowserRouter>
-                <nav>
-                    <div>
-                        <a href='/'>LOGO</a>
-                        <ul>
-                            <li><Link to='/about'>About</Link></li>
-                            <li><Link to='/shop'>Shop</Link></li>
-                            <li><Link to='/cart'>Cart({cardItems.length})</Link></li>
-                        </ul>
-                    </div>
-                </nav>
+                <header>
+                    <a href='/'>LOGO</a>
+                    <nav>
+                        <div>
+                            <ul>
+                                <li><NavLink to='/about'>About</NavLink></li>
+                                <li><NavLink to='/shop'>Shop</NavLink></li>
+                                <li><NavLink to='/cart'>Cart({cardItems.length})</NavLink></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
                 <Switch>
                     <Route exact path='/about' component={About} />
                     <Route exact path='/shop' 
