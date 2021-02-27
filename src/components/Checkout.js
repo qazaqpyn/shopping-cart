@@ -7,7 +7,7 @@ function Checkout(props) {
     let history = useHistory();
     useEffect(() => {
         if(props.cardItems.length ===0){
-            setTimeout(()=>{history.push('/shop');},1000)
+            setTimeout(()=>{history.push('/shopping-cart/shop');},1000)
         }
     })
     return (
