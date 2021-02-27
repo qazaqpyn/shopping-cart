@@ -5,6 +5,7 @@
 This online shopping cart project is to enforce my learnings on React Router as per https://theodinproject.com The design of the project is to showcase the understanding of concepts below:
 
     ReactJS
+    Router
     Hooks
     CSS
     HTML
